@@ -1,0 +1,14 @@
+#dependencies
+node_modules/
+
+#relatorios mocha
+mochawesome-report
+
+#realtorios cucumber
+cypress/reports/index.html
+
+#videos
+cypress/videos
+
+#outros
+.DS_Store

@@ -1,0 +1,19 @@
+{
+  "name": "conduitcypress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cy:run:chrome": "npx cypress run --browser chrome --hedless",
+    "cy:run:edge": "npx cypress run --browser edge --hedless",
+    "cy:run:electron": "npx cypress run",
+    "cy:run:firefox": "npx cypress run --browser firefox --hedless"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chance": "^1.1.8",
+    "cypress": "^9.5.3"
+  }
+}
