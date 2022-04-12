@@ -15,7 +15,7 @@ steps:
     versionSpec: '16.x'
   displayName: 'Install Node.js'
 
-- script: npm clean install
+- script: npm ci
   displayName: 'npm install'
 
 - script: npm run cy:run:electron
