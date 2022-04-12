@@ -22,3 +22,9 @@ steps:
   displayName: 'run tests on electron'
   continueOnError: true
   
+- task: PublishTestResults
+displayName: 'Exibindo resultados dos testes'
+inputs:
+  testResultsFiles: '**/junit-*.xml'
+  mergeTestResults: true
+  testRunTitle: 'Agilizei nivel 2'
