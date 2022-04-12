@@ -22,7 +22,7 @@ steps:
   displayName: 'run tests on electron'
   continueOnError: true
   
-- task: PublishTestResults
+- task: PublishTestResults@2
   displayName: 'Exibindo resultados dos testes'
   inputs:
     testResultsFiles: '**/junit-*.xml'
