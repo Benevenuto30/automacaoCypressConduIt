@@ -20,4 +20,5 @@ steps:
 
 - script: npm run cy:run:electron
   displayName: 'run tests on electron'
-  continueOnError: 'true'
+  continueOnError: true
+  
