@@ -9,6 +9,7 @@ cypress/reports/index.html
 
 #videos
 cypress/videos
+cypress/reports
 
 #outros
 .DS_Store

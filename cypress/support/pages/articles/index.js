@@ -25,15 +25,11 @@ class Articles{
     }
 
     verificarSeArtigoFoiCriadoComSucesso(){
-        
         cy.wait(`@${routes.as.postArticles}`).then((postArticlesResponse)=> {
             expect(postArticlesResponse.status).to.eq(200)
         })
         cy.wait(`@${routes.as.getArticlesTitles}`).then((getArticlesTitles)=> {
             expect(getArticlesTitles.status).to.eq(200)
-        })
-        cy.wait(`@${routes.as.getArticlesTitleComments}`).then((getArticlesTitlesComments)=> {
-            expect(getArticlesTitlesComments.status).to.eq(200)
         })
     }
 }
