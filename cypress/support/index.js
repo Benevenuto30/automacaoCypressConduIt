@@ -36,3 +36,7 @@ Cypress.Commands.add('backgroundLogin', () => {
             })
         })
 })
+import Routes from './routes'
+before(()=>{
+    Routes.init()
+})

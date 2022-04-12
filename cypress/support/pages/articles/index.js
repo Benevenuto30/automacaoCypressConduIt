@@ -1,7 +1,11 @@
+/// <reference types="cypress"/>
+
 let Chance = require('chance')
 let chance = new Chance()
 
 const elements = require('./elements').ELEMENTS
+
+import routes from '../../routes'
 
 class Articles{
 
@@ -18,6 +22,19 @@ class Articles{
 
     submeterArtigo(){
         cy.get(elements.buttonSubmit).click()
+    }
+
+    verificarSeArtigoFoiCriadoComSucesso(){
+        
+        cy.wait(`@${routes.as.postArticles}`).then((postArticlesResponse)=> {
+            expect(postArticlesResponse.status).to.eq(200)
+        })
+        cy.wait(`@${routes.as.getArticlesTitles}`).then((getArticlesTitles)=> {
+            expect(getArticlesTitles.status).to.eq(200)
+        })
+        cy.wait(`@${routes.as.getArticlesTitleComments}`).then((getArticlesTitlesComments)=> {
+            expect(getArticlesTitlesComments.status).to.eq(200)
+        })
     }
 }
 
