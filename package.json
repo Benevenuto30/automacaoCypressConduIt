@@ -7,7 +7,8 @@
     "cy:run:chrome": "npx cypress run --browser chrome --hedless",
     "cy:run:edge": "npx cypress run --browser edge --hedless",
     "cy:run:electron": "npx cypress run",
-    "cy:run:firefox": "npx cypress run --browser firefox --hedless"
+    "cy:run:firefox": "npx cypress run --browser firefox --hedless",
+    "cy:open": "npx cypress open"
   },
   "keywords": [],
   "author": "",
